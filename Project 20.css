@@ -1,0 +1,138 @@
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+*{
+    list-style: none;
+}
+.addNote{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 20px;
+}
+#addBtn{
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+.logo{
+    font-size: xx-large;
+    cursor: pointer;
+}
+.hr{
+    color: rgb(235, 183, 12);
+}
+.keep{
+    color: white;
+}
+.header{
+    background-color: #656D78;
+}
+.black-white{
+    height: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: x-large;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    overflow-y: scroll;
+    height: 89vh;
+    margin-left: 40px;
+}
+.note{
+    box-shadow: 2px 0px 5px 1px rgb(139, 135, 135);
+    background-color: aliceblue;
+    border-radius: 10px;    
+    display: inline-block;
+    overflow-y: scroll;
+    height: 150px;
+    width: 280px;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    padding: 5px;
+ } 
+.operation{
+    display: flex;
+    justify-content: flex-end;
+}
+.operation button{
+    font-weight: bold;
+    width: 30px;
+    height: 25px;
+    margin: 5px 5px;
+    border: none;
+}
+.edit, #addBtn{
+    background-color: #3BAFDA;
+    color: white;
+}
+.edit:hover, #addBtn:hover{
+    color: #3BAFDA;
+    background-color: white;
+    border: 1px solid #3BAFDA;
+}
+.saveBtn{
+    background-color: #F6BB42;
+    color: white;
+}
+.saveBtn:hover{
+    color: #F6BB42;
+    background-color: white;
+    border: 1px solid #F6BB42;
+}
+.delete{
+    background-color: #DA4453;
+    color: white;
+}
+.delete:hover{
+    color: #DA4453;
+    border: 1px solid #DA4453;
+    background-color: white;
+}
+.note textarea{
+    border: none;
+    outline: none;
+    height: 105px;
+    width: 100%;
+    font-size: x-large;
+    resize: none;
+}
+#saved{
+    height: 100px;
+    color: black;
+    overflow-wrap: break-word;
+}
+footer{
+    cursor: default;
+    color: rgb(80, 79, 79);
+    background-color: #E3E6EA;
+}
+.hidden{
+    display: none;
+}
+
+@media (max-width: 340px) {
+    #main{
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 298px) {
+    .note{
+        width: 95%;
+    }
+    .header .logo{
+        font-size: large;
+    }
+    footer{
+        height: auto;
+        padding: 20px 5px;
+    }
+}
